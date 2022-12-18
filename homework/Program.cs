@@ -7,7 +7,8 @@ namespace homework
         static void Main(string[] args)
         {
             Console.WriteLine("0 - Exit");
-            Console.WriteLine("0 - 1 TicTacToe");
+            Console.WriteLine("1 - TicTacToe");
+            Console.WriteLine("2 - Phonebook");
 
             string value = Console.ReadLine();
 
@@ -16,6 +17,11 @@ namespace homework
                 case "1":
                     {
                         TicTacToe.Start();
+                        return;
+                    }
+                case "2":
+                    {
+                        Phonebook.Start();
                         return;
                     }
                 case "0":
