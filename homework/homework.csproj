@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="abonents.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abonents.txt" />
+  </ItemGroup>
 </Project>
