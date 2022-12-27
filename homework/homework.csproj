@@ -6,9 +6,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="abonents.txt" />
+    <None Remove="tictactoe\" />
+    <None Remove="phonebook\" />
+    <None Remove="phonebook\abonents.txt" />
+    <None Remove="animal\" />
+    <None Remove="list\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="abonents.txt" />
+    <Compile Include="phonebook\abonents.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="tictactoe\" />
+    <Folder Include="phonebook\" />
+    <Folder Include="animal\" />
+    <Folder Include="list\" />
   </ItemGroup>
 </Project>

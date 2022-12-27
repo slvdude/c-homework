@@ -1,5 +1,8 @@
 ﻿using System;
 using static System.Net.Mime.MediaTypeNames;
+using homework.tictactoe;
+using homework.phonebook;
+using homework.calctasks;
 
 namespace homework
 {
@@ -30,11 +33,6 @@ namespace homework
                 case "3":
                     {
                         CalcTasks.Start();
-                        break;
-                    }
-                case "4":
-                    {
-                        SendSmtp.SendEmail();
                         break;
                     }
                 case "0":

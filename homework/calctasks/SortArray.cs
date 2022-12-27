@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace homework
+namespace homework.calctasks
 {
     public class SortArray
     {

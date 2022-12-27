@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace homework
+namespace list
 {
     public class CustomArray<T> where T : System.IEquatable<T>
     {

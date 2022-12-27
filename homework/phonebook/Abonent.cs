@@ -1,5 +1,5 @@
 ﻿using System;
-namespace homework
+namespace homework.phonebook
 {
     class Abonent
     {

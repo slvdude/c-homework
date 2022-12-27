@@ -1,5 +1,5 @@
 ﻿using System;
-namespace homework
+namespace homework.animal
 {
     public class Dog : Animal
     {

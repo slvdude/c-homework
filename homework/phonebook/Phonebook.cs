@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace homework
+namespace homework.phonebook
 {
 
     class Phonebook
@@ -47,28 +47,33 @@ namespace homework
 
             if (abonents.Exists(abonent => abonent.name == name || abonent.phonenumber == number))
             {
-                Console.WriteLine("Такой абонент уже существует");
+                Console.WriteLine("This abonent already exists");
+                Start();
             }
             else
             {
                 abonents.Add(new Abonent(name, number));
-                new StreamWriter(@"./abonents.txt", true).WriteLine(name + ":" + number);
+                new StreamWriter(@"abonents.txt", true).WriteLine(name + ":" + number);
+                Console.WriteLine("Abonent was added");
+                Start();
             }
         }
 
         public void GetAbonent()
         {
-            Console.Write("Enter a name or phone number");
+            Console.WriteLine("Enter a name or phone number");
             string arg = Console.ReadLine();
             Abonent? abonent = Get(arg);
             Console.WriteLine();
             if (abonent != null)
             {
                 Console.WriteLine(abonent.name + ": " + abonent.phonenumber);
+                Start();
             }
             else
             {
                 Console.WriteLine("Abonent wasn't founded");
+                Start();
             }
         }
 
@@ -82,10 +87,13 @@ namespace homework
             if (abonent != null)
             {
                 abonents.Remove(abonent);
+                Console.WriteLine("Abonent was removed");
+                Start();
             }
             else
             {
                 Console.WriteLine("Abonent wasn't founded");
+                Start();
             }
         }
 
