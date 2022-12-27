@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace homework
 {
@@ -9,6 +10,8 @@ namespace homework
             Console.WriteLine("0 - Exit");
             Console.WriteLine("1 - TicTacToe");
             Console.WriteLine("2 - Phonebook");
+            Console.WriteLine("3 - Calculation tasks");
+            Console.WriteLine("4 - Send email");
 
             string value = Console.ReadLine();
 
@@ -17,12 +20,22 @@ namespace homework
                 case "1":
                     {
                         TicTacToe.Start();
-                        return;
+                        break;
                     }
                 case "2":
                     {
                         Phonebook.Start();
-                        return;
+                        break;
+                    }
+                case "3":
+                    {
+                        CalcTasks.Start();
+                        break;
+                    }
+                case "4":
+                    {
+                        SendSmtp.SendEmail();
+                        break;
                     }
                 case "0":
                     {
