@@ -151,6 +151,11 @@ namespace homework
                         calcTasks.MultiplicationTable();
                         break;
                     }
+                case "5":
+                    {
+                        SortArray.Sort();
+                        break;
+                    }
                 case "0":
                     {
                         return;

@@ -15,7 +15,7 @@ namespace homework
 
             try
             {
-                foreach(string elem in File.ReadAllText("./abonents.txt").Split(Environment.NewLine))
+                foreach(string elem in File.ReadAllText("abonents.txt").Split(Environment.NewLine))
                 {
                     string[] data = elem.Split("-");
 
